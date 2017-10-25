@@ -1,6 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Wojtek Zając`
   },
-  plugins: [`gatsby-plugin-react-helmet`],
-}
+  plugins: [
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography.js`
+    //   }
+    // },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`
+  ]
+};
