@@ -1,13 +1,19 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (
+const Home = () =>
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+    <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
 
-export default IndexPage
+    <p>
+      I specialize in JavaScript, web accessibility and user experience engineering. I’ve started the Kraków office of
+      Xfive.co. I currently work with X-Team.com.
+    </p>
+
+    <p>
+      Typography (especially vintage book covers) is my obsession. I sometimes pretend to be a public speaker. Other
+      times I take photos with Instax or my phone.
+    </p>
+  </div>;
+
+export default Home;

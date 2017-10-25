@@ -1,64 +1,44 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
-import './index.css'
+import Menu from './_menu';
+import './styles/basic.css';
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+const Container = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+`;
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
+const H1 = styled.h1`margin-top: 0;`;
+
+const Masthead = styled.header`
+  float: left;
+  margin-bottom: 2rem;
+`;
+
+const Header = () =>
+  <Masthead>
+    <H1>
+      <Link to="/">Wojtek Zając</Link>
+    </H1>
+  </Masthead>;
+
+const TemplateWrapper = ({ children }) =>
+  <Container>
+    <Helmet title="Wojtek Zając" meta={[{ name: 'description', content: 'Wojtek Zając' }]} />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <Menu />
+    <div className="content">
       {children()}
     </div>
-  </div>
-)
+    <footer>&copy; Wojtek</footer>
+  </Container>;
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.func
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
