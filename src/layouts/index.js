@@ -12,30 +12,32 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const H1 = styled.h1`margin-top: 0;`;
+const H1 = styled.h1`
+  margin-top: 0;
+`;
 
 const Masthead = styled.header`
   float: left;
   margin-bottom: 2rem;
 `;
 
-const Header = () =>
+const Header = () => (
   <Masthead>
     <H1>
-      <Link to="/">Wojtek Zając</Link>
+      <Link to="/">Home</Link>
     </H1>
-  </Masthead>;
+  </Masthead>
+);
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({ children }) => (
   <Container>
     <Helmet title="Wojtek Zając" meta={[{ name: 'description', content: 'Wojtek Zając' }]} />
     <Header />
     <Menu />
-    <div className="content">
-      {children()}
-    </div>
+    <div className="content">{children()}</div>
     <footer>&copy; Wojtek</footer>
-  </Container>;
+  </Container>
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
