@@ -1,19 +1,79 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { SocialIcon } from 'react-social-icons';
+import styled from 'styled-components';
 
-const Home = () =>
-  <div>
-    <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
+const Social = styled.ul`
+	list-style: none;
+	margin: 0;
+`;
 
-    <p>
-      I specialize in JavaScript, web accessibility and user experience engineering. I’ve started the Kraków office of
-      Xfive.co. I currently work with X-Team.com.
-    </p>
+const Icon = styled.li`
+	display: inline-block;
+	padding-right: 5px;
+`;
 
-    <p>
-      Typography (especially vintage book covers) is my obsession. I sometimes pretend to be a public speaker. Other
-      times I take photos with Instax or my phone.
-    </p>
-  </div>;
+const social = [
+	{
+		id: 1,
+		url: 'http://linkedin.com/in/wojciechzajac'
+	},
+	{
+		id: 2,
+		url: 'http://twitter.com/theanxy'
+	},
+	{
+		id: 3,
+		url: 'http://github.com/theanxy'
+	},
+	{
+		id: 4,
+		type: 'itunes',
+		url: 'http://last.fm/user/buterux'
+	},
+	{
+		id: 5,
+		url: 'http://instagram.com/theanxy'
+	},
+	{
+		id: 6,
+		type: 'email',
+		url: 'mailto:wojtek@wojtekzajac.com'
+	}
+];
+
+const Home = () => (
+	<section>
+		<div>
+			<p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
+
+			<p>
+				I specialize in JavaScript, web accessibility and user experience
+				engineering. I’ve started the Kraków office of Xfive.co. I currently
+				work with X-Team.com.
+			</p>
+
+			<p>
+				Typography (especially vintage book covers) is my obsession. I sometimes
+				pretend to be a public speaker. Other times I take photos with Instax or
+				my phone.
+			</p>
+		</div>
+
+		<Social>
+			{social.map(link => (
+				<Icon key={link.id}>
+					<SocialIcon
+						url={link.url}
+						color="rgba(0,0,0,.5)"
+						network={link.type}
+						style={{ height: 30, width: 30 }}
+					/>
+				</Icon>
+			))}
+			<li>wojtek.photo</li>
+		</Social>
+	</section>
+);
 
 export default Home;
