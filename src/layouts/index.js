@@ -14,6 +14,7 @@ const Container = styled.div`
 
 const H1 = styled.h1`
   margin-top: 0;
+  font-size: 50px;
 `;
 
 const Masthead = styled.header`
@@ -21,10 +22,18 @@ const Masthead = styled.header`
   margin-bottom: 2rem;
 `;
 
+const Phonetic = styled.span`
+  font-family: Arial;
+  font-weight: 400;
+  display: none;
+`;
+
 const Header = () => (
   <Masthead>
     <H1>
-      <Link to="/">I’m Wojtek [ˈvɔi̯tɛk]</Link>
+      <Link to="/">
+        I’m Wojtek <Phonetic>[ˈvɔi̯tɛk]</Phonetic>
+      </Link>
     </H1>
   </Masthead>
 );
