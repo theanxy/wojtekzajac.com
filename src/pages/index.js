@@ -79,6 +79,25 @@ const Home = () => (
         <li>wojtek.photo</li>
       </Social>
     </Content>
+
+    <section style={{ clear: 'both' }}>
+      <h3>Latest articles</h3>
+
+      <ul>
+        <li>
+          <strong>Summary of 2017</strong>
+          <br />September 1, 2016
+        </li>
+        <li>
+          <strong>Summary of 2016</strong>
+          <br />September 1, 2016
+        </li>
+      </ul>
+    </section>
+
+    <section style={{ clear: 'both' }}>
+      <h3>Latest Instagram posts</h3>
+    </section>
   </section>
 );
 
