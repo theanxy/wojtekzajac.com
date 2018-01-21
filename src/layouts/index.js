@@ -8,42 +8,42 @@ import Menu from './_menu';
 import './styles/basic.css';
 
 const Container = styled.div`
-	max-width: 960px;
-	margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 `;
 
 const H1 = styled.h1`
-	margin-top: 0;
+  margin-top: 0;
 `;
 
 const Masthead = styled.header`
-	float: left;
-	margin-bottom: 2rem;
+  float: left;
+  margin-bottom: 2rem;
 `;
 
 const Header = () => (
-	<Masthead>
-		<H1>
-			<Link to="/">I’m Wojtek [ˈvɔi̯tɛk]</Link>
-		</H1>
-	</Masthead>
+  <Masthead>
+    <H1>
+      <Link to="/">I’m Wojtek [ˈvɔi̯tɛk]</Link>
+    </H1>
+  </Masthead>
 );
 
 const TemplateWrapper = ({ children }) => (
-	<Container>
-		<Helmet
-			title="Wojtek Zając"
-			meta={[{ name: 'description', content: 'Wojtek Zając' }]}
-		/>
-		<Header />
-		<Menu />
-		<div className="content">{children()}</div>
-		<footer>&copy; Wojtek</footer>
-	</Container>
+  <Container className="container">
+    <Helmet
+      title="Wojtek Zając"
+      meta={[{ name: 'description', content: 'Wojtek Zając' }]}
+    />
+    <Header />
+    <Menu />
+    <div className="content">{children()}</div>
+    <footer>&copy; Wojtek</footer>
+  </Container>
 );
 
 TemplateWrapper.propTypes = {
-	children: PropTypes.func
+  children: PropTypes.func
 };
 
 export default TemplateWrapper;

@@ -1,5 +1,10 @@
 body {
   padding: 3em;
+  background: #e4e9f0;
+}
+
+.introImg {
+  max-width: 500px;
 }
 
 .content {
@@ -7,6 +12,6 @@ body {
 }
 
 footer {
-  font-size: .875em;
+  font-size: 0.875em;
   margin-top: 3rem;
 }
