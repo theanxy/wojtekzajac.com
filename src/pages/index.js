@@ -58,47 +58,37 @@ const social = [
   }
 ];
 
-const Home = () => (
-  <section>
-    <img src={Mugshot} alt="Wojtek" className="introImg" />
+class Home extends React.Component {
 
-    <Content>
-      <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
+  render() {
 
-      <Social>
-        {social.map(link => (
-          <Icon key={link.id}>
-            <SocialIcon
-              url={link.url}
-              color="rgba(0,0,0,.5)"
-              network={link.type}
-              style={{ height: 30, width: 30 }}
-            />
-          </Icon>
-        ))}
-        <li>wojtek.photo</li>
-      </Social>
-    </Content>
+    return (
+      <section>
+        <img src={Mugshot} alt="Wojtek" className="introImg" />
+        {this.state.posts}
+        <Content>
+          <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
 
-    <section style={{ clear: 'both' }}>
-      <h3>Latest articles</h3>
+          <Social>
+            {social.map(link => (
+              <Icon key={link.id}>
+                <SocialIcon
+                  url={link.url}
+                  color="rgba(0,0,0,.5)"
+                  network={link.type}
+                  style={{ height: 30, width: 30 }}
+                />
+              </Icon>
+            ))}
+            <li>wojtek.photo</li>
+          </Social>
+        </Content>
 
-      <ul>
-        <li>
-          <strong>Summary of 2017</strong>
-          <br />September 1, 2016
-        </li>
-        <li>
-          <strong>Summary of 2016</strong>
-          <br />September 1, 2016
-        </li>
-      </ul>
-    </section>
 
-    <section style={{ clear: 'both' }}>
-      <h3>Latest Instagram posts</h3>
-    </section>
-  </section>
-);
+        </section>
+      </section>
+    );
+  }
+}
 
 export default Home;
