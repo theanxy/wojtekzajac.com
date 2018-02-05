@@ -3,7 +3,7 @@ import annes from 'typography-theme-st-annes';
 
 const typography = new Typography(
   Object.assign(annes, {
-    baseFontSize: '18px',
+    baseFontSize: '14px',
     headerFontFamily: ['Amatic Sc', 'sans-serif'],
     bodyFontFamily: ['Open Sans', 'sans-serif'],
     googleFonts: [

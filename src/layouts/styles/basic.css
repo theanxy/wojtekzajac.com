@@ -1,17 +1,8 @@
 body {
   padding: 3em;
-  background: #e4e9f0;
+  background: #fefefe;
 }
 
-h1 a {
+a {
   color: #000;
-}
-
-.content {
-  clear: both;
-}
-
-footer {
-  font-size: 0.875em;
-  margin-top: 3rem;
 }

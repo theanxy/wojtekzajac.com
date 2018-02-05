@@ -5,19 +5,18 @@ import Link from 'gatsby-link';
 
 const Menu = styled.ul`
   float: right;
+  position: relative;
+  z-index: 5;
+  font-size: 14px;
+  text-transform: uppercase;
 `;
 
 const Li = styled.li`
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 3em;
 `;
 
 const pages = [
-  // {
-  // 	id: 0,
-  // 	text: 'Home',
-  // 	url: '/'
-  // },
   // {
   //   id: 4,
   //   text: 'Sample',
@@ -26,7 +25,7 @@ const pages = [
   {
     id: 1,
     text: 'About',
-    url: '/experience'
+    url: '/about'
   },
   {
     id: 2,
@@ -35,13 +34,13 @@ const pages = [
   },
   {
     id: 3,
-    text: 'Speaking',
-    url: '/speaking'
+    text: 'Photography',
+    url: '/photography'
   },
   {
     id: 4,
-    text: 'Photography',
-    url: '//wojtek.photo'
+    text: 'Speaking',
+    url: '/speaking'
   }
 ];
 
