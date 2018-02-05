@@ -3,20 +3,16 @@ import Link from 'gatsby-link';
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
 
-import Mugshot from '../img/Wojtek.jpg';
-
-const Img = styled.img`
-  position: absolute;
-  width: 700px;
-  left: 50%;
-  margin-left: -600px;
-  display: block;
-`;
-
 const Content = styled.section`
-  float: right;
+  margin: 0 auto;
   width: 600px;
   position: relative;
+  text-align: center;
+`;
+
+const Heading = styled.h1`
+  padding-top: 30vh;
+  font-size: 60px;
 `;
 
 const Social = styled.ul`
@@ -63,8 +59,7 @@ class Home extends React.Component {
     return (
       <section>
         <Content>
-          <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
-
+          <Heading>Wojtek Zając</Heading>
           <Social>
             {social.map(link => (
               <Icon key={link.id}>

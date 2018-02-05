@@ -2,12 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import travels from '../../data/wojtek.json';
 
-console.log(travels.trips);
-
 const Heading = styled.header`
-	width: 100%;
-	height: 200px;
-	background: red;
+  width: 100%;
+  height: 200px;
+  background: red;
 `;
 
 // fetch('../../data/wojtek.json')
@@ -17,10 +15,10 @@ const Heading = styled.header`
 // 	});
 
 export default () => (
-	<div className="container">
-		{/* <Heading /> */}
+  <div className="container">
+    {/* <Heading /> */}
 
-		<iframe
+    {/* <iframe
 			width="100%"
 			height="445"
 			style={{ background: '#f9f9f9' }}
@@ -28,17 +26,38 @@ export default () => (
 			scrolling="no"
 			frameBorder="0"
 			allowFullScreen
-		/>
+		/> */}
+    <img src="//placehold.it/900x200" alt="Map" />
 
-		<table>
-			<tbody>
-				{travels.trips.map((trip, i) => (
-					<tr key={i}>
-						<td>{trip.country}</td>
-						<td>{trip.place}</td>
-					</tr>
-				))}
-			</tbody>
-		</table>
-	</div>
+    <section>
+      <h2>FAQ</h2>
+      <dl>
+        <dt>Favorite place?</dt>
+        <dd>That must be Chicago.</dd>
+      </dl>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>City</th>
+          <th>Dates</th>
+          <th>Length</th>
+        </tr>
+      </thead>
+      <tbody>
+        {travels.trips.map((trip, i) => (
+          <tr key={i}>
+            <td>{trip.country}</td>
+            <td>{trip.place}</td>
+            <td>
+              {trip.date_start} – {trip.date_end}
+            </td>
+            <td>{trip.length}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 );
