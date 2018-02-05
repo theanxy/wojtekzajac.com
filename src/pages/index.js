@@ -59,13 +59,9 @@ const social = [
 ];
 
 class Home extends React.Component {
-
   render() {
-
     return (
       <section>
-        <img src={Mugshot} alt="Wojtek" className="introImg" />
-        {this.state.posts}
         <Content>
           <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
 
@@ -83,9 +79,6 @@ class Home extends React.Component {
             <li>wojtek.photo</li>
           </Social>
         </Content>
-
-
-        </section>
       </section>
     );
   }
