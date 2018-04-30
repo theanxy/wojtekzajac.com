@@ -12,7 +12,7 @@ const Content = styled.section`
 
 const Heading = styled.h1`
   padding-top: 30vh;
-  font-size: 60px;
+  font-size: 80px;
 `;
 
 const Social = styled.ul`
@@ -32,16 +32,11 @@ const social = [
   },
   {
     id: 2,
-    url: 'http://twitter.com/theanxy'
+    url: 'http://twitter.com/wojtek'
   },
   {
     id: 3,
     url: 'http://github.com/theanxy'
-  },
-  {
-    id: 4,
-    type: 'itunes',
-    url: 'http://last.fm/user/buterux'
   },
   {
     id: 5,
@@ -60,6 +55,7 @@ class Home extends React.Component {
       <section>
         <Content>
           <Heading>Wojtek Zając</Heading>
+
           <Social>
             {social.map(link => (
               <Icon key={link.id}>
@@ -71,7 +67,6 @@ class Home extends React.Component {
                 />
               </Icon>
             ))}
-            <li>wojtek.photo</li>
           </Social>
         </Content>
       </section>

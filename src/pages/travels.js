@@ -27,7 +27,7 @@ export default () => (
 			frameBorder="0"
 			allowFullScreen
 		/> */}
-    <img src="//placehold.it/900x200" alt="Map" />
+    <img src="//placehold.it/900x200" width="900" height="200" alt="Map" />
 
     <section>
       <h2>FAQ</h2>

@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: flex;
+  // display: flex;
 `;
 
 const About = styled.article`
@@ -23,23 +23,23 @@ class Experience extends React.Component {
     return (
       <div>
         <Container>
-          <p>
-            I've got 17 years of experience with front-end development and 7
-            years of experience with leading distributed teams.
-          </p>
-          <p>Howdy. I am a front-end engineer based in Kraków, Poland.</p>
+          <p>Over the years, I've created a few photo projects.</p>
 
-          <p>
-            I specialize in JavaScript, web accessibility and user experience
-            engineering. I’ve started the Kraków office of Xfive.co. I currently
-            work with X-Team.com.
-          </p>
-
-          <p>
-            Typography (especially vintage book covers) is my obsession. I
-            sometimes pretend to be a public speaker. Other times I take photos
-            with Instax or my phone.
-          </p>
+          <ul>
+            <li>
+              <div className="photo">
+                <img
+                  src="//placehold.it/900x200"
+                  width="400"
+                  height="400"
+                  alt="Map"
+                />
+              </div>
+              <div className="desc">
+                <p>Wojtek.photo</p>
+              </div>
+            </li>
+          </ul>
         </Container>
       </div>
     );

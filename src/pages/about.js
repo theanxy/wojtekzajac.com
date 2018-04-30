@@ -23,7 +23,12 @@ class Experience extends React.Component {
     return (
       <div>
         <Container>
-          <img src="//placehold.it/300x500" alt="Wojtek" />
+          <img
+            src="//placehold.it/300x500"
+            width="300"
+            height="500"
+            alt="Wojtek"
+          />
           <About>
             <p>
               I've got 17 years of experience with front-end development and 7
