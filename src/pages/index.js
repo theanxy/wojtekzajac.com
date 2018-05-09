@@ -51,7 +51,7 @@ const Heading = styled.h1`
   color: #fff;
 	text-shadow: 3px 4px 0 #000;
 
-	@media (min-width: 550px) {
+	@media (min-width: 650px) {
 		font-size: 150px;
 	}
 `;
