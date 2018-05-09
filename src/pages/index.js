@@ -2,28 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
-
-const Content = styled.section`
-  margin: 0 auto;
-  width: 600px;
-  position: relative;
-  text-align: center;
-`;
-
-const Heading = styled.h1`
-  padding-top: 30vh;
-  font-size: 80px;
-`;
-
-const Social = styled.ul`
-  list-style: none;
-  margin: 0;
-`;
-
-const Icon = styled.li`
-  display: inline-block;
-  padding-right: 5px;
-`;
+import sand from '../img/Sand.jpg';
 
 const social = [
   {
@@ -49,10 +28,51 @@ const social = [
   }
 ];
 
+const Content = styled.section`
+  margin: 30vh auto 0;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+`;
+
+const Bg = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+`;
+
+const Heading = styled.h1`
+  font-size: 80px;
+  color: #fff;
+	text-shadow: 3px 4px 0 #000;
+
+	@media (min-width: 550px) {
+		font-size: 150px;
+	}
+`;
+
+const Social = styled.ul`
+  list-style: none;
+  margin: 0;
+`;
+
+const Icon = styled.li`
+  display: inline-block;
+  padding-right: 5px;
+`;
+
+console.log(sand);
 class Home extends React.Component {
   render() {
     return (
       <section>
+        <Bg style={{ backgroundImage: `url(${sand})` }} />
+
         <Content>
           <Heading>Wojtek Zając</Heading>
 
@@ -61,7 +81,7 @@ class Home extends React.Component {
               <Icon key={link.id}>
                 <SocialIcon
                   url={link.url}
-                  color="rgba(0,0,0,.5)"
+                  color="rgba(255, 255, 255, 1)"
                   network={link.type}
                   style={{ height: 30, width: 30 }}
                 />

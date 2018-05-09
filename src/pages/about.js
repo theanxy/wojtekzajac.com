@@ -8,7 +8,6 @@ const Container = styled.div`
 
 const About = styled.article`
   margin-left: 40px;
-  font-size: 13px;
 `;
 
 // const Img = styled.img``;
@@ -29,6 +28,7 @@ class Experience extends React.Component {
             height="500"
             alt="Wojtek"
           />
+
           <About>
             <p>
               I've got 17 years of experience with front-end development and 7

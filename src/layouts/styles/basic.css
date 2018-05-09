@@ -1,6 +1,11 @@
 body {
   padding: 3em;
-  background: #fefefe;
+  background: #faf4e8;
+  background: linear-gradient(
+    0deg,
+    rgb(253, 247, 235) 25%,
+    rgba(250, 244, 232, 1) 100%
+  );
 }
 
 a {
