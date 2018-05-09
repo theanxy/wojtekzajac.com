@@ -55,7 +55,7 @@ const TemplateWrapper = ({ location, children }) => (
 
     <Masthead>
       {location.pathname !== '/' ? <Header /> : <div />}
-      <Menu />
+      {/* <Menu /> */}
     </Masthead>
 
     <Content>{children()}</Content>
