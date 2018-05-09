@@ -1,6 +1,6 @@
 {
-	"name": "gatsby-starter-default",
-	"description": "Wojtek Zając homepage",
+	"name": "wojtekzajac.com",
+	"description": "Wojtek Zajac's homepage",
 	"version": "1.0.0",
 	"author": "Wojtek Zając <wojtek@wojtekzajac.com>",
 	"dependencies": {
@@ -20,13 +20,12 @@
 		"develop": "gatsby develop",
 		"build": "gatsby build",
 		"clean": "rm -rf public",
-		"build:pp": "gatsby build --prefix-paths",
-		"build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
+		"deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
-		"gh-pages": "^1.0.0",
+		"gh-pages": "^1.1.0",
 		"prettier": "^1.7.4"
 	}
 }

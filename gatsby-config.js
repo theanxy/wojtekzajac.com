@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: `Wojtek Zając`
   },
-  pathPrefix: `/wojtekzajac.com`,
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
