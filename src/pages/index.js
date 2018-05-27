@@ -2,7 +2,9 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
-import sand from '../img/Sand.jpg';
+import bgLQ from '../img/bg-index-sand-800.jpg';
+import bgMQ from '../img/bg-index-sand-1600.jpg';
+import bgHQ from '../img/bg-index-sand-2500.jpg';
 
 const social = [
   {
@@ -41,19 +43,28 @@ const Bg = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
+  background-image: url(${bgLQ});
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
+
+  @media (min-device-width: 400px) {
+    background-image: url(${bgMQ});
+  }
+
+  @media (min-device-width: 1600px) {
+    background-image: url(${bgHQ});
+  }
 `;
 
 const Heading = styled.h1`
   font-size: 80px;
   color: #fff;
-	text-shadow: 3px 4px 0 #000;
+  text-shadow: 3px 4px 0 #000;
 
-	@media (min-width: 650px) {
-		font-size: 150px;
-	}
+  @media (min-width: 650px) {
+    font-size: 150px;
+  }
 `;
 
 const Social = styled.ul`
@@ -66,12 +77,11 @@ const Icon = styled.li`
   padding-right: 5px;
 `;
 
-console.log(sand);
 class Home extends React.Component {
   render() {
     return (
       <section>
-        <Bg style={{ backgroundImage: `url(${sand})` }} />
+        <Bg />
 
         <Content>
           <Heading>Wojtek Zając</Heading>
