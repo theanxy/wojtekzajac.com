@@ -2,7 +2,6 @@ const PAGE_LIST = [
   {
     text: 'About',
     url: '/about'
-    // isPublished: true
   },
   {
     text: 'Travels',
@@ -10,7 +9,8 @@ const PAGE_LIST = [
   },
   {
     text: 'Photography',
-    url: '/photography'
+    url: '/photography',
+    isPublished: true
   },
   {
     text: 'Speaking',
