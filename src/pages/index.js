@@ -52,7 +52,7 @@ const Bg = styled.div`
     background-image: url(${bgMQ});
   }
 
-  @media (min-device-width: 1600px) {
+  @media (min-device-width: 1600px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url(${bgHQ});
   }
 `;
