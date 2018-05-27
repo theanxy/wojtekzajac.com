@@ -48,14 +48,11 @@ const Header = () => (
 
 const TemplateWrapper = ({ location, children }) => (
   <Container className="container">
-    <Helmet
-      title="Wojtek Zając"
-      meta={[{ name: 'description', content: 'Wojtek Zając' }]}
-    />
+    <Helmet title="Wojtek Zając" meta={[{ name: 'description', content: 'Wojtek Zając' }]} />
 
     <Masthead>
       {location.pathname !== '/' ? <Header /> : <div />}
-      {/* <Menu /> */}
+      <Menu />
     </Masthead>
 
     <Content>{children()}</Content>
