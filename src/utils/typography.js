@@ -4,7 +4,6 @@ import annes from 'typography-theme-st-annes';
 const typography = new Typography(
   Object.assign(annes, {
     baseFontSize: '14px',
-    headerFontFamily: ['Amatic Sc', 'sans-serif'],
     bodyFontFamily: ['Open Sans', 'sans-serif'],
     googleFonts: [
       {
@@ -15,7 +14,16 @@ const typography = new Typography(
         name: 'Open Sans',
         styles: ['200', '300', '400', '600', '700', '800']
       }
-    ]
+    ],
+    overrideStyles: () => ({
+      h1: {
+        fontFamily: ['Amatic Sc', 'sans-serif'].join(',')
+      },
+      a: {
+        textDecoration: 'none',
+        color: '#000'
+      }
+    })
   })
 );
 

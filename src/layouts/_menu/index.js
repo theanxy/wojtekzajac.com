@@ -7,6 +7,7 @@ import PAGE_LIST from './pages';
 const Menu = styled.ul`
   float: right;
   position: relative;
+  padding-top: 2.3em;
   z-index: 5;
   font-size: 14px;
   text-transform: uppercase;

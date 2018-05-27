@@ -22,7 +22,6 @@ const H1 = styled.h1`
 const Masthead = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   margin-bottom: 2em;
 `;
 
@@ -34,6 +33,10 @@ const Phonetic = styled.span`
 
 const Content = styled.div`
   clear: both;
+`;
+
+const SiteFooter = styled.footer`
+  margin-top: 3em;
 `;
 
 const Header = () => (
@@ -57,7 +60,7 @@ const TemplateWrapper = ({ location, children }) => (
 
     <Content>{children()}</Content>
 
-    {location.pathname !== '/' && <footer>&copy; Wojtek</footer>}
+    {location.pathname !== '/' && <SiteFooter>&copy; Wojtek</SiteFooter>}
   </Container>
 );
 
