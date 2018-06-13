@@ -8,6 +8,10 @@
       "component---src-pages-sample-js-b948957b407e902dcbb7.js",
       "component---src-pages-sample-js-b948957b407e902dcbb7.js.map"
     ],
+    "component---src-pages-book-js": [
+      "component---src-pages-book-js-f28b326cac7cac4797cb.js",
+      "component---src-pages-book-js-f28b326cac7cac4797cb.js.map"
+    ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
@@ -16,13 +20,17 @@
       "path---photography-a0e39f21c11f6a62c5ab.js",
       "path---photography-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-resources-js": [
+      "component---src-pages-resources-js-063226f0af4462e2deb3.js",
+      "component---src-pages-resources-js-063226f0af4462e2deb3.js.map"
+    ],
     "component---src-pages-speaking-js": [
       "component---src-pages-speaking-js-c7d03d820067f6cd589f.js",
       "component---src-pages-speaking-js-c7d03d820067f6cd589f.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-59d2639cc2efb53a7449.js",
-      "component---src-layouts-index-js-59d2639cc2efb53a7449.js.map"
+      "component---src-layouts-index-js-24ba2893622c940fe409.js",
+      "component---src-layouts-index-js-24ba2893622c940fe409.js.map"
     ],
     "component---src-pages-travels-js": [
       "component---src-pages-travels-js-36e40e3a2ab7f81449c9.js",
@@ -48,6 +56,10 @@
       "commons-283bb65c7e28d5e5e7a9.js",
       "commons-283bb65c7e28d5e5e7a9.js.map"
     ],
+    "path---resources": [
+      "path---resources-a0e39f21c11f6a62c5ab.js",
+      "path---resources-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
@@ -57,13 +69,13 @@
       "path---travels-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-photography-js": [
-      "component---src-pages-photography-js-56310a161ef08236321f.js",
-      "component---src-pages-photography-js-56310a161ef08236321f.js.map"
+      "component---src-pages-photography-js-53f57d08fd6a9503210d.js",
+      "component---src-pages-photography-js-53f57d08fd6a9503210d.js.map"
     ],
     "app": [
-      "app-99fad6424b3c850b9ec5.js",
+      "app-9346022f6304697cd9f1.js",
       "build-js-styles.css",
-      "app-99fad6424b3c850b9ec5.js.map",
+      "app-9346022f6304697cd9f1.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -71,8 +83,12 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-52cf0b29221cee5a4ce5.js",
-      "component---src-pages-about-js-52cf0b29221cee5a4ce5.js.map"
+      "component---src-pages-about-js-14177c92cce834c40fd4.js",
+      "component---src-pages-about-js-14177c92cce834c40fd4.js.map"
+    ],
+    "path---book": [
+      "path---book-a0e39f21c11f6a62c5ab.js",
+      "path---book-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
