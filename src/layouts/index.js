@@ -36,7 +36,17 @@ const Content = styled.div`
 `;
 
 const SiteFooter = styled.footer`
-  margin-top: 3em;
+  margin-top: 5em;
+  border-top: 1px solid #ccc;
+  max-width: 500px;
+  padding-top: 1em;
+  font-size: 13px;
+
+  em {
+    font-style: normal;
+    padding-left: 1em;
+    color: #888;
+  }
 `;
 
 const Header = () => (
@@ -51,7 +61,10 @@ const Header = () => (
 
 const TemplateWrapper = ({ location, children }) => (
   <Container className="container">
-    <Helmet title="Wojtek Zając" meta={[{ name: 'description', content: 'Wojtek Zając' }]} />
+    <Helmet
+      title="Wojtek Zając"
+      meta={[{ name: 'description', content: 'Wojtek Zając' }]}
+    />
 
     <Masthead>
       {location.pathname !== '/' ? <Header /> : <div />}
@@ -60,7 +73,11 @@ const TemplateWrapper = ({ location, children }) => (
 
     <Content>{children()}</Content>
 
-    {location.pathname !== '/' && <SiteFooter>&copy; Wojtek</SiteFooter>}
+    {location.pathname !== '/' && (
+      <SiteFooter>
+        &copy; 2018 Wojtek <em>hello@wojtekzajac.com</em>
+      </SiteFooter>
+    )}
   </Container>
 );
 

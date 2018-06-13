@@ -10,7 +10,6 @@ const PAGE_LIST = [
   {
     text: 'Photography',
     url: '/photography'
-    // isPublished: true
   },
   {
     text: 'Speaking',
@@ -19,6 +18,11 @@ const PAGE_LIST = [
   {
     text: 'Book',
     url: '/book'
+  },
+  {
+    text: 'Resources',
+    url: '/resources',
+    isPublished: true
   }
 ];
 
