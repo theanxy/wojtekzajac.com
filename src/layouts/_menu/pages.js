@@ -9,12 +9,16 @@ const PAGE_LIST = [
   },
   {
     text: 'Photography',
-    url: '/photography',
-    isPublished: true
+    url: '/photography'
+    // isPublished: true
   },
   {
     text: 'Speaking',
     url: '/speaking'
+  },
+  {
+    text: 'Book',
+    url: '/book'
   }
 ];
 

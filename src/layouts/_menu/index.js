@@ -25,7 +25,9 @@ export default () => (
   <Menu>
     {pages.map((page, id) => (
       <Li key={id} shaded={!page.isPublished}>
-        <Link to={page.url}>{page.text}</Link>
+        <Link to={page.url} activeStyle={{ fontWeight: 600 }}>
+          {page.text}
+        </Link>
       </Li>
     ))}
   </Menu>
