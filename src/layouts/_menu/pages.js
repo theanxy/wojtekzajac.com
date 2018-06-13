@@ -1,27 +1,27 @@
 const PAGE_LIST = [
   {
     text: 'About',
-    url: '/about'
+    url: '/about/'
   },
   {
     text: 'Travels',
-    url: '/travels'
+    url: '/travels/'
   },
   {
     text: 'Photography',
-    url: '/photography'
+    url: '/photography/'
   },
   {
     text: 'Speaking',
-    url: '/speaking'
+    url: '/speaking/'
   },
   {
     text: 'Book',
-    url: '/book'
+    url: '/book/'
   },
   {
     text: 'Resources',
-    url: '/resources',
+    url: '/resources/',
     isPublished: true
   }
 ];
