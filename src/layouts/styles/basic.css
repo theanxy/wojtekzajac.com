@@ -1,5 +1,18 @@
 body {
   padding: 2em 3em;
   background: #faf4e8;
-  background: linear-gradient(0deg, rgb(253, 247, 235) 25%, rgba(250, 244, 232, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(253, 247, 235) 25%,
+    rgba(250, 244, 232, 1) 100%
+  );
+}
+
+a {
+  border-bottom: 1px solid #999;
+  transition: border 0.2s;
+}
+
+a:hover {
+  border-color: #000;
 }

@@ -19,6 +19,12 @@ const typography = new Typography(
       h1: {
         fontFamily: ['Amatic Sc', 'sans-serif'].join(',')
       },
+      h2: {
+        fontFamily: ['Amatic Sc', 'sans-serif'].join(',')
+      },
+      h3: {
+        fontFamily: ['Amatic Sc', 'sans-serif'].join(',')
+      },
       a: {
         textDecoration: 'none',
         color: '#000'
