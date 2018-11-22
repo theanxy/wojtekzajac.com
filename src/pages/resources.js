@@ -102,6 +102,9 @@ export default () => (
         </a>{' '}
         the easiest way to spot a beginner, or: how to not be seen as one
       </li>
+			<li>
+				<a href="https://justinjackson.ca/speak">Why Geeks Should Speak</a>
+			</li>
     </ul>
     <h3 id="books-">Books</h3>
     <ul>
