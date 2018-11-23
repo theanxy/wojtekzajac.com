@@ -1,8 +1,7 @@
 const PAGE_LIST = [
   {
     text: 'About',
-    url: '/about/',
-    isPublished: true
+    url: '/about/'
   },
   {
     text: 'Travels',
