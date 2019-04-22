@@ -1,3 +1,13 @@
+@keyframes highlight {
+  from {
+    background: #fff;
+  }
+
+  to {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
 body {
   padding: 2em 3em;
   background: #faf4e8;
@@ -15,4 +25,13 @@ a {
 
 a:hover {
   border-color: #000;
+}
+
+.footnotelink a {
+  border: none;
+}
+
+.footnotes :target {
+  animation-duration: 3s;
+  animation-name: highlight;
 }

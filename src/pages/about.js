@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Wojtek from '../img/Wojtek.jpg';
 import WojtekHorizontal from '../img/Wojtek-horizontal2.jpg';
+import NYC from '../img/NYC.jpg';
 import WhoIsHiring from '../img/interviews/whoishiring.jpg';
 import JustJoinIt from '../img/interviews/justjoinit.jpg';
 
@@ -32,11 +33,42 @@ const Container = styled.div`
 
 const Pic = styled.div`
   margin: 0 -${PAGE_PADDING} 0;
+
+  img {
+    margin-bottom: 0;
+  }
+
+  small {
+    display: block;
+    text-align: right;
+  }
 `;
 
 const Bio = styled.article`
   margin: 2em auto;
-  font-size: 18px;
+  font-size: 16px;
+
+  p {
+    margin-right: 20%;
+  }
+
+  .intro {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  aside {
+    ol,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 10px 0;
+    }
+  }
 `;
 
 const TwoCol = styled.div`
@@ -64,6 +96,10 @@ const Experience = styled.div`
     padding-left: 20px;
   }
 
+  [data-xteam]:after {
+    content: ' *';
+  }
+
   h4 {
     margin: 0 0 0.5em -20px;
     font-size: 18px;
@@ -84,6 +120,7 @@ const Experience = styled.div`
   }
 
   h4 + strong {
+    display: block;
     font-weight: 600;
   }
 
@@ -97,7 +134,6 @@ const Interviews = styled.section`
   justify-content: space-between;
 
   a {
-    display: block;
     max-width: 100%;
     position: relative;
 
@@ -129,25 +165,33 @@ const Interviews = styled.section`
       left: 0;
       background: rgba(255, 255, 255, 0.8);
       z-index: 5;
+      padding: 3px 5px;
     }
   }
 `;
 
 const technical = [
-  {
-    company: <a href="https://x-team.com">X-Team</a>,
-    title: 'Lead Front-End Engineer',
-    date: 'Jul 2006 – now'
-  },
+  // {
+  //   company: <a href="https://x-team.com">X-Team</a>,
+  //   title: 'Lead Front-End Engineer',
+  //   date: 'Jul 2006 – now'
+  // },
   {
     company: 'Kaplan, Inc.',
     title: 'Lead Front-End Engineer',
-    date: 'Jan 2015 – now'
+    date: 'Jan 2015 – now',
+    xteam: true
   },
   {
     company: 'Fox Broadcasting Company',
     title: 'Senior Front-end Engineer',
-    date: 'Jul 2010 – Aug 2013'
+    date: 'Jul 2010 – Dec 2014',
+    xteam: true
+  },
+  {
+    company: 'Xfive.co / X-Team',
+    title: 'Senior Front-end Engineer',
+    date: 'Jul 2006 – Jul 2010'
   }
 ];
 
@@ -160,7 +204,8 @@ const leadership = [
   {
     company: 'Fox Broadcasting Company',
     title: 'Team Lead',
-    date: 'Sep 2013 - Dec 2014'
+    date: 'Sep 2013 - Dec 2014',
+    xteam: true
   },
   {
     company: <a href="https://xfive.co">Xfive.co</a>,
@@ -172,7 +217,6 @@ const leadership = [
 class About extends React.Component {
   constructor() {
     super();
-    this.state = { count: 0 };
   }
 
   render() {
@@ -182,7 +226,7 @@ class About extends React.Component {
         <ul>
           {data.map((position, i) => (
             <li key={i}>
-              <h4>{position.company}</h4>
+              <h4 data-xteam={position.xteam}>{position.company}</h4>
               <strong>{position.title}</strong>
               <p>{position.date}</p>
             </li>
@@ -195,31 +239,71 @@ class About extends React.Component {
       <AboutPage>
         <Section>
           <Pic>
-            <img src={WojtekHorizontal} alt="Wojtek" />
+            {/* <img src={WojtekHorizontal} alt="Wojtek" /> */}
+            {/* <small>Chicago, 2017</small> */}
+            <img src={NYC} alt="Wojtek" />
           </Pic>
         </Section>
 
         <Section>
           <Container>
             <Bio>
+              <p className="intro">
+                My name is Wojtek Zając<sup
+                  className="footnotelink"
+                  id="fnhref:pronunciation"
+                >
+                  <a href="#fn:pronunciation">1</a>
+                </sup>, and I’m a software engineer. Originally&nbsp;based in
+                Kraków, Poland, I've been{' '}
+                <a href="//nomadlist.com/@wojtek">traveling extensively</a>{' '}
+                since 2010. Eventually—in 2015—I’ve sold some of my bigger
+                possessions, left everything else behind and became a digital
+                nomad.
+              </p>
+              <p className="intro">
+                My professional work is mostly related to front-end development
+                which I got into in&nbsp;the&nbsp;early&nbsp;2000’s.
+              </p>
               <p>
-                Wojtek is a 28 years old technical leader with 18 years of
-                experience in front-end engineering and 8 years of experience in
-                leading co-located or distributed teams.
+                Within Front-End, I specialise in Web Accessibility and I’ve
+                given several workshops and presentations on the topic. In 2005,
+                I've published the first course of{' '}
+                <a href="https://en.wikipedia.org/wiki/Polish_Sign_Language">
+                  Polish Sign Language
+                </a>{' '}
+                available online. Since then, I've been working with major
+                Universities in U.S., UK and Australia, govermental insitutions
+                and private companies on making sure their websites comply with
+                accessibility regulations.
               </p>
 
               <p>
-                Originally based in Kraków, Poland, he became a digital nomad in
-                2015 and travels around the world since then.
+                Over time, I became accustomed to working in teams of different
+                sizes and shapes, both as a member and leader. That includes
+                fully distributed (remote-first) groups, physical offices with
+                satellite workers, multi-site groups spread between different
+                continents, and traditional single-site teams. I've also founded
+                and been running a local office for 4 years scaling it up to 18
+                people. All of these experiences gave me an unique perspective
+                into the mechanics of every model behind remote work and into
+                various kinds of communication patterns.
               </p>
 
               <p>
-                He specializes in JavaScript, web accessibility and user
-                experience engineering. Passionate with remote work
-                {/* He's started the Kraków office of{' '}
-              <a href="https://xfive.co">Xfive.co</a>. I currently work with
-              X-Team.com. */}
+                Currently, my interests revolve around technical leadership and
+                best ways to foster company culture that leverages remote
+                working and asynchronous communication.
               </p>
+
+              <aside className="footnotes">
+                <ol>
+                  <li id="fn:pronunciation">
+                    1. My first name is pronounced “Voitek”.{' '}
+                    <a href="#fnhref:pronunciation">↩</a>
+                  </li>
+                </ol>
+              </aside>
             </Bio>
           </Container>
         </Section>
@@ -234,10 +318,11 @@ class About extends React.Component {
               </p>
             </div>
             <div>
-              <h3>Skills</h3>
-              <ul>
-                <p>React, Angular.js, Styled Components, </p>
-              </ul>
+              <h3>Recommended stack</h3>
+              <p>
+                React, Redux, TypeScript, Styled Components, CSS&nbsp;Modules,
+                Web Accessibility, Storybook, Jest, Cypress
+              </p>
             </div>
           </TwoCol>
         </Section>
@@ -250,35 +335,37 @@ class About extends React.Component {
           </TwoCol>
 
           <p>
-            For more details, please see my{' '}
-            <a href="https://www.linkedin.com/in/wojciechzajac/">Linkedin</a>{' '}
-            profile.
+            * Through <a href="https://x-team.com">X-Team</a>
+          </p>
+          <p>
+            For a more detailed work history, please see{' '}
+            <a href="https://www.linkedin.com/in/wojciechzajac/">Linkedin</a>.
           </p>
         </Section>
 
         <Section>
           <h2>Interviews</h2>
           <Interviews>
-            <TwoCol>
-              <div>
-                <a href="https://blog.whoishiring.io/wojtek-zajac-on-his-early-career-remote-work-and-accessibility/">
-                  <img src={WhoIsHiring} alt="" />
-                  <span>
-                    [EN] Wojtek Zając on his early career, remote work and
-                    accessibility
-                  </span>
+            <ul>
+              <li>
+                <a
+                  href="https://blog.whoishiring.io/wojtek-zajac-on-his-early-career-remote-work-and-accessibility/"
+                  lang="en"
+                >
+                  [EN] Wojtek Zając on his early career, remote work and
+                  accessibility
                 </a>
-              </div>
-              <div>
-                <a href="https://geek.justjoin.it/wieku-16-stworzyl-front-end-twittera-dzis-pracuje-klientami-calego-swiata/">
-                  <img src={JustJoinIt} alt="" />
-                  <span>
-                    [PL] W wieku 16 lat stworzył front-end Twittera. Dziś
-                    pracuje z klientami z całego świata
-                  </span>
+              </li>
+              <li>
+                <a
+                  href="https://geek.justjoin.it/wieku-16-stworzyl-front-end-twittera-dzis-pracuje-klientami-calego-swiata/"
+                  lang="pl"
+                >
+                  [PL] W wieku 16 lat stworzył front-end Twittera. Dziś pracuje
+                  z klientami z całego świata
                 </a>
-              </div>
-            </TwoCol>
+              </li>
+            </ul>
           </Interviews>
         </Section>
       </AboutPage>
