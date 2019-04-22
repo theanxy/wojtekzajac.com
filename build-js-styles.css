@@ -1,2 +1,2 @@
-body{padding:2em 3em;background:#faf4e8;background:linear-gradient(0deg,#fdf7eb 25%,#faf4e8)}a{border-bottom:1px solid #999;transition:border .2s}a:hover{border-color:#000}
+@keyframes highlight{0%{background:#fff}to{background:hsla(0,0%,100%,0)}}body{padding:2em 3em;background:#faf4e8;background:linear-gradient(0deg,#fdf7eb 25%,#faf4e8)}a{border-bottom:1px solid #999;transition:border .2s}a:hover{border-color:#000}.footnotelink a{border:none}.footnotes :target{animation-duration:3s;animation-name:highlight}
 /*# sourceMappingURL=build-js-styles.css.map*/
