@@ -16,15 +16,25 @@ const Menu = styled.ul`
 const Li = styled.li`
   display: inline-block;
   margin-left: 3em;
-  opacity: ${props => (props.shaded ? 0.4 : 1)};
+
+  a {
+    border: none;
+  }
+
+  &[data-shaded='true'] {
+    opacity: 0.4;
+    display: none;
+  }
 `;
 
-const pages = process.env.SHOW_FULL_MENU ? PAGE_LIST : PAGE_LIST.filter(page => page.isPublished);
+const pages = process.env.SHOW_FULL_MENU
+  ? PAGE_LIST
+  : PAGE_LIST.filter(page => page.isPublished);
 
 export default () => (
   <Menu>
     {pages.map((page, id) => (
-      <Li key={id} shaded={!page.isPublished}>
+      <Li key={id} data-shaded={!page.isPublished}>
         <Link to={page.url} activeStyle={{ fontWeight: 600 }}>
           {page.text}
         </Link>

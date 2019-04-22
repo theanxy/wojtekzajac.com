@@ -17,6 +17,10 @@ const H1 = styled.h1`
   font-size: 50px;
   float: left;
   margin-bottom: 2rem;
+
+  a {
+    border: none;
+  }
 `;
 
 const Masthead = styled.header`
