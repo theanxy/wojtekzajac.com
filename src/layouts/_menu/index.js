@@ -5,17 +5,20 @@ import Link from 'gatsby-link';
 import PAGE_LIST from './pages';
 
 const Menu = styled.ul`
-  float: right;
   position: relative;
-  padding-top: 2.3em;
+  margin: 0 -3em 0 0;
   z-index: 5;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: 600px) {
+    padding-top: 2.3em;
+  }
 `;
 
 const Li = styled.li`
   display: inline-block;
-  margin-left: 3em;
+  margin-right: 3em;
 
   a {
     border: none;

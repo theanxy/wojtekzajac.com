@@ -15,8 +15,11 @@ const Container = styled.div`
 const H1 = styled.h1`
   margin-top: 0;
   font-size: 50px;
-  float: left;
   margin-bottom: 2rem;
+
+  @media (min-width: 600px) {
+    float: left;
+  }
 
   a {
     border: none;
@@ -24,9 +27,12 @@ const H1 = styled.h1`
 `;
 
 const Masthead = styled.header`
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 2em;
+
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 const Phonetic = styled.span`
@@ -54,13 +60,11 @@ const SiteFooter = styled.footer`
 `;
 
 const Header = () => (
-  <Masthead>
-    <H1>
-      <Link to="/">
-        Wojtek Zajac <Phonetic>[ˈvɔi̯tɛk]</Phonetic>
-      </Link>
-    </H1>
-  </Masthead>
+  <H1>
+    <Link to="/">
+      Wojtek Zajac <Phonetic>[ˈvɔi̯tɛk]</Phonetic>
+    </Link>
+  </H1>
 );
 
 const TemplateWrapper = ({ location, children }) => (

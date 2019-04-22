@@ -7,10 +7,14 @@ import NYC from '../img/NYC.jpg';
 import WhoIsHiring from '../img/interviews/whoishiring.jpg';
 import JustJoinIt from '../img/interviews/justjoinit.jpg';
 
-const PAGE_PADDING = '5em';
-
 const AboutPage = styled.div`
-  margin: 0 ${PAGE_PADDING};
+  @media (min-width: 650px) {
+    margin: 0 2.5em;
+  }
+
+  @media (min-width: 850px) {
+    margin: 0 5em;
+  }
 
   h2 {
     font-size: 42px;
@@ -32,7 +36,13 @@ const Container = styled.div`
 `;
 
 const Pic = styled.div`
-  margin: 0 -${PAGE_PADDING} 0;
+  @media (min-width: 650px) {
+    margin: 0 -2.5em 0;
+  }
+
+  @media (min-width: 850px) {
+    margin: 0 -5em 0;
+  }
 
   img {
     margin-bottom: 0;
@@ -48,8 +58,10 @@ const Bio = styled.article`
   margin: 2em auto;
   font-size: 16px;
 
-  p {
-    margin-right: 20%;
+  @media (min-width: 800px) {
+    p {
+      margin-right: 20%;
+    }
   }
 
   .intro {
@@ -72,15 +84,17 @@ const Bio = styled.article`
 `;
 
 const TwoCol = styled.div`
-  display: flex;
+  @media (min-width: 600px) {
+    display: flex;
 
-  > div {
-    width: 50%;
-    padding-left: 20px;
+    > div {
+      width: 50%;
+      padding-left: 20px;
 
-    &:first-of-type {
-      padding-left: 0;
-      padding-right: 20px;
+      &:first-of-type {
+        padding-left: 0;
+        padding-right: 20px;
+      }
     }
   }
 `;
