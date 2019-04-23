@@ -6,19 +6,25 @@ import PAGE_LIST from './pages';
 
 const Menu = styled.ul`
   position: relative;
-  margin: 0 -3em 0 0;
+  margin: 0;
   z-index: 5;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: 600px) {
     padding-top: 2.3em;
+    text-align: left;
   }
 `;
 
 const Li = styled.li`
   display: inline-block;
   margin-right: 3em;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   a {
     border: none;

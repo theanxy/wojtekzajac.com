@@ -16,9 +16,11 @@ const H1 = styled.h1`
   margin-top: 0;
   font-size: 50px;
   margin-bottom: 2rem;
+  text-align: center;
 
   @media (min-width: 600px) {
     float: left;
+    text-align: left;
   }
 
   a {

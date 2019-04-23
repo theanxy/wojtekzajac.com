@@ -55,10 +55,11 @@ const Pic = styled.div`
 `;
 
 const Bio = styled.article`
-  margin: 2em auto;
   font-size: 16px;
 
   @media (min-width: 800px) {
+    margin: 2em auto;
+
     p {
       margin-right: 20%;
     }

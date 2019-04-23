@@ -9,13 +9,18 @@
 }
 
 body {
-  padding: 2em 3em;
+  padding: 2em 5%;
   background: #faf4e8;
   background: linear-gradient(
     0deg,
     rgb(253, 247, 235) 25%,
     rgba(250, 244, 232, 1) 100%
   );
+
+  @media (min-width: 600px) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 }
 
 a {
