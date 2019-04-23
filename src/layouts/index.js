@@ -73,7 +73,13 @@ const TemplateWrapper = ({ location, children }) => (
   <Container className="container">
     <Helmet
       title="Wojtek Zając"
-      meta={[{ name: 'description', content: 'Wojtek Zając' }]}
+      meta={[
+        {
+          name: 'description',
+          content:
+            'Wojtek Zając is a software engineer and a technical lead from Kraków, Poland.'
+        }
+      ]}
     />
 
     <Masthead>
