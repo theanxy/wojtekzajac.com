@@ -48,7 +48,7 @@ const Content = styled.div`
 `;
 
 const SiteFooter = styled.footer`
-  margin-top: 5em;
+  margin-top: 6em;
   border-top: 1px solid #ccc;
   max-width: 500px;
   padding-top: 1em;

@@ -14,7 +14,8 @@ const PAGE_LIST = [
   },
   {
     text: 'Speaking',
-    url: '/speaking/'
+    url: '/speaking/',
+    isPublished: true
   },
   {
     text: 'Book',
