@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Resources = styled.section`
+  font-size: 14px;
   padding-left: 50px;
   margin: 0 auto;
   max-width: 800px;
@@ -102,9 +103,9 @@ export default () => (
         </a>{' '}
         the easiest way to spot a beginner, or: how to not be seen as one
       </li>
-			<li>
-				<a href="https://justinjackson.ca/speak">Why Geeks Should Speak</a>
-			</li>
+      <li>
+        <a href="https://justinjackson.ca/speak">Why Geeks Should Speak</a>
+      </li>
     </ul>
     <h3 id="books-">Books</h3>
     <ul>
