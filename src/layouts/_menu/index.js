@@ -12,7 +12,7 @@ const Menu = styled.ul`
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     padding-top: 2.3em;
     text-align: left;
   }
@@ -20,7 +20,11 @@ const Menu = styled.ul`
 
 const Li = styled.li`
   display: inline-block;
-  margin-right: 3em;
+  margin-right: 2em;
+
+  @media (min-width: 600px) {
+    margin-right: 3em;
+  }
 
   &:last-child {
     margin-right: 0;

@@ -18,7 +18,7 @@ const H1 = styled.h1`
   margin-bottom: 2rem;
   text-align: center;
 
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     float: left;
     text-align: left;
   }
@@ -31,7 +31,7 @@ const H1 = styled.h1`
 const Masthead = styled.header`
   margin-bottom: 2em;
 
-  @media (min-width: 600px) {
+  @media (min-width: 650px) {
     display: flex;
     justify-content: space-between;
   }
