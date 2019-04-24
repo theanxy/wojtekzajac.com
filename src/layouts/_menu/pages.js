@@ -19,7 +19,8 @@ const PAGE_LIST = [
   },
   {
     text: 'Book',
-    url: '/book/'
+    url: '/book/',
+    isPublished: true
   },
   {
     text: 'Resources',
