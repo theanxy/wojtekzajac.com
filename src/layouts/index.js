@@ -91,7 +91,7 @@ const TemplateWrapper = ({ location, children }) => (
 
     {location.pathname !== '/' && (
       <SiteFooter>
-        &copy; 2018 Wojtek <em>hello@wojtekzajac.com</em>
+        &copy; 2019 Wojtek <em>hello@wojtekzajac.com</em>
       </SiteFooter>
     )}
   </Container>
