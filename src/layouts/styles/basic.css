@@ -27,6 +27,10 @@ a:hover {
   border-color: #000;
 }
 
+img {
+  height: auto;
+}
+
 .footnotelink a {
   border: none;
 }

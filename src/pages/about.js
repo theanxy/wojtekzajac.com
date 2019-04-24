@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Wojtek from '../img/Wojtek.jpg';
 import WojtekHorizontal from '../img/Wojtek-horizontal2.jpg';
-import NYC from '../img/NYC.jpg';
+import NYC from '../img/NYC-small.jpg';
 import WhoIsHiring from '../img/interviews/whoishiring.jpg';
 import JustJoinIt from '../img/interviews/justjoinit.jpg';
 
@@ -256,7 +256,7 @@ class About extends React.Component {
           <Pic>
             {/* <img src={WojtekHorizontal} alt="Wojtek" /> */}
             {/* <small>Chicago, 2017</small> */}
-            <img src={NYC} alt="Wojtek" />
+            <img src={NYC} width="960" height="377" alt="Wojtek" />
           </Pic>
         </Section>
 

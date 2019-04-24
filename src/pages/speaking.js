@@ -36,7 +36,7 @@ class Speaking extends React.Component {
     return (
       <SpeakingPage>
         <Pic>
-          <img src={Header} alt="" />
+          <img src={Header} width="1700" height="719" alt="" />
         </Pic>
 
         <p>

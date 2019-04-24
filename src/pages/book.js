@@ -79,7 +79,7 @@ class Speaking extends React.Component {
           being a digital nomad. That includes working while on the go, finding
           places where to work from, top digital nomad destinations and more.
         </p>
-        <p>If you'd like hear more, leave your contact details below!</p>
+        <p>If you'd like to hear more, leave your contact details below!</p>
         <fieldset>
           <input
             type="email"
