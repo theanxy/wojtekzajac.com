@@ -282,8 +282,9 @@ class About extends React.Component {
               </p>
               <p>
                 Within Front-End, I specialise in Web Accessibility and I’ve
-                given several workshops and presentations on the topic. In 2005,
-                I've published the first course of{' '}
+                given{' '}
+                <Link to="/speaking/">several workshops and presentations</Link>{' '}
+                on the topic. In 2005, I've published the first course of{' '}
                 <a href="https://en.wikipedia.org/wiki/Polish_Sign_Language">
                   Polish Sign Language
                 </a>{' '}
