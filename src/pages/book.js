@@ -34,13 +34,14 @@ const BookPage = styled.form`
   button {
     display: inline-block;
     margin: 0 auto;
-    background: orange;
+    background: #f5a300;
     color: #fff;
     border: 0;
     padding: 5px 10px;
+    cursor: pointer;
 
     &:hover {
-      background: red;
+      background: #d68f02;
     }
   }
 `;
