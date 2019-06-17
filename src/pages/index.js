@@ -21,7 +21,7 @@ const social = [
   },
   {
     id: 5,
-    url: 'http://instagram.com/theanxy'
+    url: 'http://instagram.com/expatowy'
   },
   {
     id: 6,
