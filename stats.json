@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "component---src-pages-i-need-your-help-js": [
+      "component---src-pages-i-need-your-help-js-ef10add395e248d18aa0.js",
+      "component---src-pages-i-need-your-help-js-ef10add395e248d18aa0.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-ddb1fab9913c43474a5e.js",
       "component---src-pages-index-js-ddb1fab9913c43474a5e.js.map"
@@ -25,8 +29,8 @@
       "component---src-pages-resources-js-e240f7e58ac7ce5cf5f9.js.map"
     ],
     "component---src-pages-speaking-js": [
-      "component---src-pages-speaking-js-0e075edfd504341bb6af.js",
-      "component---src-pages-speaking-js-0e075edfd504341bb6af.js.map"
+      "component---src-pages-speaking-js-bc90775ea0bc18cbee30.js",
+      "component---src-pages-speaking-js-bc90775ea0bc18cbee30.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-5cc28a18bce8c7ffdf0f.js",
@@ -72,10 +76,14 @@
       "component---src-pages-photography-js-53f57d08fd6a9503210d.js",
       "component---src-pages-photography-js-53f57d08fd6a9503210d.js.map"
     ],
+    "path---i-need-your-help": [
+      "path---i-need-your-help-a0e39f21c11f6a62c5ab.js",
+      "path---i-need-your-help-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "app": [
-      "app-2ecb38747f64a24e0924.js",
+      "app-7e3765bf0a43d1f030d8.js",
       "build-js-styles.css",
-      "app-2ecb38747f64a24e0924.js.map",
+      "app-7e3765bf0a43d1f030d8.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
