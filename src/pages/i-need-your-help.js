@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Kenya from '../img/swahilibox/swahilibox.jpg';
@@ -48,6 +49,15 @@ class Swahilibox extends React.Component {
   render() {
     return (
       <SwahiliboxPage>
+        <Helmet
+          title="I need your help — Wojtek Zając"
+          meta={[
+            {
+              name: 'description',
+              content: 'A perfect opportunity to support a thriving technical community in Mombasa.'
+            }
+          ]}
+        />
         <h1>I need your help! (Apologies for the clickbait 😉)</h1>
 
         <img src={Kenya} alt="Wojtek in Kenya" />
@@ -60,9 +70,9 @@ class Swahilibox extends React.Component {
         </p>
         <p>
           <strong>
-            I’m currently in Mombasa, Kenya during the 3rd and final week of volunteering at a local NGO, SwahiliBox.
+            I’m currently in Mombasa, Kenya during the 4th and final week of volunteering at a local NGO, SwahiliBox.
           </strong>{' '}
-          For the past 3 weeks, along with 2 colleagues of mine, we've been running various technical workshops.
+          For the past month, along with 2 colleagues of mine, we've been running various technical workshops.
         </p>
         <p>
           <strong>Yesterday</strong>, I've announced that I can run one more workshop this week, asking about the topic
@@ -110,12 +120,42 @@ class Swahilibox extends React.Component {
         <p>
           SwahiliBox currently consists of about 15 talented developers, mostly between 18-26 years old. Some are good
           with IoT, others already published native mobile apps, but the biggest group is eager to keep getting better
-          at web development.{' '}
+          at web development.
+        </p>
+        <p>
+          Below are some of the members who stand out from the crowd, I think by referencing them personally we could
+          have a bigger impact.
         </p>
         <ul>
-          <li>Maria: an extremely dedicated person working long hours</li>
-          <li>Isaac: large experience with Python/Django</li>
-          <li>Abdallah:</li>
+          <li>
+            <strong>Maria</strong>: an extremely dedicated person working long hours
+          </li>
+          <li>
+            <strong>Isaac Nyakoi (Python Dev Entrepreneur)</strong>: He has been very dedicated in how he keeps coming
+            to the space and loves to help others. He has started doing workshops when asked around Python and has even
+            been teaching python in a bootcamp style learning environment. He also has his own startup which is in
+            development stage.
+          </li>
+          <li>
+            <strong>Abdallah</strong>:
+          </li>
+          <li>
+            <strong>Dennis onkangi (IOT and Web Dev)</strong> has created Impact innovations to help communities
+            including a very recent addition called TeleTap targeting Pregnant mothers during their pregnancy period.
+            Since we all know miscarriages happen alot in africa due to long response times from medical personel. Thus
+            they are making a small gadget that will allow for faster communication to health workers when a pregnant
+            mother is in need of medical help.
+          </li>
+          <li>
+            <strong>Abae Akili (Web and graphics Dev)</strong> Very dedicated to the community Runs workshops at
+            SwahiliBox and does alot to help within SwahiliBox itself. He has a startup that looks at engaging people
+            with emergency services closing the gap between the two entities.
+          </li>
+          <li>
+            <strong>Muzammil Khan - (IOT Dev)</strong> A very energetic young highschool individual that has been
+            instrumental in keeping the fire of IOT learning Alive at SwahiliBox he is doing his A-Levels and juggles
+            full time education with being a vibrant community member.
+          </li>
           <li>… TBD</li>
         </ul>
 
@@ -127,7 +167,7 @@ class Swahilibox extends React.Component {
         </p>
         <p>
           As soon as this project ends, you will get a link to the finished video. Every help counts and this is a
-          chance for you to really influence lifes of these students. Any questions, just let me know!
+          chance for you to really influence the lives of these students. Any questions, just let me know!
         </p>
 
         <p className="intro">
