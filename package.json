@@ -11,7 +11,6 @@
     "gatsby-plugin-mailchimp":
       "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v1",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sharp": "^1.6.11",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
     "react-social-icons": "^2.7.0",
