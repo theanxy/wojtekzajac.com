@@ -27,8 +27,8 @@ a:hover {
   border-color: #000;
 }
 
-.social-icon:hover {
-  border-color: transparent;
+.social-icon {
+  border: none;
 }
 
 img {
