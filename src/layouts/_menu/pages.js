@@ -2,31 +2,30 @@ const PAGE_LIST = [
   {
     text: 'About',
     url: '/about/',
-    isPublished: true
+    isPublished: true,
   },
   {
     text: 'Travels',
-    url: '/travels/'
+    url: '/travels/',
   },
   {
     text: 'Photography',
-    url: '/photography/'
+    url: '/photography/',
   },
   {
     text: 'Speaking',
     url: '/speaking/',
-    isPublished: true
+    isPublished: true,
   },
   {
     text: 'Book',
     url: '/book/',
-    isPublished: true
   },
   {
     text: 'Resources',
     url: '/resources/',
-    isPublished: true
-  }
+    isPublished: true,
+  },
 ];
 
 export default PAGE_LIST;
