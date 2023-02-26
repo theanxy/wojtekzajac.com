@@ -76,9 +76,8 @@ const TemplateWrapper = ({ location, children }) => (
       meta={[
         {
           name: 'description',
-          content:
-            'Wojtek Zając is a software engineer and a technical lead from Kraków, Poland.'
-        }
+          content: 'Wojtek Zając is a software engineer and a technical lead from Kraków, Poland.',
+        },
       ]}
     />
 
@@ -91,14 +90,14 @@ const TemplateWrapper = ({ location, children }) => (
 
     {location.pathname !== '/' && (
       <SiteFooter>
-        &copy; 2019 Wojtek <em>hello@wojtekzajac.com</em>
+        &copy; 2021 Wojtek <em>hello@wojtekzajac.com</em>
       </SiteFooter>
     )}
   </Container>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 };
 
 export default TemplateWrapper;

@@ -194,39 +194,39 @@ const technical = [
   {
     company: 'Kaplan, Inc.',
     title: 'Lead Front-End Engineer',
-    date: 'Jan 2015 – now',
-    xteam: true
+    date: 'Jan 2015 – Mar 2021',
+    xteam: true,
   },
   {
     company: 'Fox Broadcasting Company',
     title: 'Senior Front-end Engineer',
     date: 'Jul 2010 – Dec 2014',
-    xteam: true
+    xteam: true,
   },
   {
     company: 'Xfive.co / X-Team',
     title: 'Senior Front-end Engineer',
-    date: 'Jul 2006 – Jul 2010'
-  }
+    date: 'Jul 2006 – Jul 2010',
+  },
 ];
 
 const leadership = [
   {
     company: <a href="http://worldisyouroffice.com/">World is your office</a>,
     title: 'Co-founder, partner',
-    date: 'Jun 2018 – now'
+    date: 'Jun 2018 – Jan 2019',
   },
   {
     company: 'Fox Broadcasting Company',
     title: 'Team Lead',
     date: 'Sep 2013 - Dec 2014',
-    xteam: true
+    xteam: true,
   },
   {
     company: <a href="https://xfive.co">Xfive.co</a>,
     title: 'Branch Manager',
-    date: 'Nov 2010 – Dec 2014'
-  }
+    date: 'Nov 2010 – Dec 2014',
+  },
 ];
 
 class About extends React.Component {
@@ -264,9 +264,11 @@ class About extends React.Component {
           <Container>
             <Bio>
               <p className="intro">
-                My name is Wojtek Zając<sup className="footnotelink" id="fnhref:pronunciation">
+                My name is Wojtek Zając
+                <sup className="footnotelink" id="fnhref:pronunciation">
                   <a href="#fn:pronunciation">1</a>
-                </sup>, and I’m a software engineer. Originally&nbsp;based in Kraków, Poland, I've been{' '}
+                </sup>
+                , and I’m a software engineer. Originally&nbsp;based in Kraków, Poland, I've been{' '}
                 <a href="//nomadlist.com/@wojtek">traveling extensively</a> since 2010. Eventually—in 2015—I’ve sold
                 some of my bigger possessions, left everything else behind and became a digital nomad.
               </p>
