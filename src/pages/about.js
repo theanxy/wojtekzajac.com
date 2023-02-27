@@ -192,6 +192,11 @@ const technical = [
   //   date: 'Jul 2006 – now'
   // },
   {
+    company: 'Euler Labs',
+    title: 'Tech Lead UI/UX',
+    date: 'Feb 2022 - now',
+  },
+  {
     company: 'Kaplan, Inc.',
     title: 'Lead Front-End Engineer',
     date: 'Jan 2015 – Mar 2021',
