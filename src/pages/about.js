@@ -2,8 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Wojtek from '../img/Wojtek.jpg';
-import WojtekHorizontal from '../img/Wojtek-horizontal2.jpg';
-import NYC from '../img/NYC-small.jpg';
+import Wojtek2023 from '../img/Wojtek-2023-edited.jpg';
 import WhoIsHiring from '../img/interviews/whoishiring.jpg';
 import JustJoinIt from '../img/interviews/justjoinit.jpg';
 
@@ -36,21 +35,32 @@ const Container = styled.div`
 `;
 
 const Pic = styled.div`
-  @media (min-width: 650px) {
-    margin: 0 -2.5em 0;
-  }
-
-  @media (min-width: 850px) {
-    margin: 0 -5em 0;
-  }
+  margin: 0 -50vw;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  overflow: hidden;
 
   img {
-    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
-  small {
-    display: block;
-    text-align: right;
+  @media (max-width: 600px) {
+    height: 0;
+    padding-top: 56.25%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 `;
 
@@ -58,7 +68,7 @@ const Bio = styled.article`
   font-size: 16px;
 
   @media (min-width: 800px) {
-    margin: 2em auto;
+    margin: 0 auto 2em;
 
     p {
       margin-right: 20%;
@@ -259,9 +269,7 @@ class About extends React.Component {
       <AboutPage>
         <Section>
           <Pic>
-            {/* <img src={WojtekHorizontal} alt="Wojtek" /> */}
-            {/* <small>Chicago, 2017</small> */}
-            <img src={NYC} width="960" height="377" alt="Wojtek" />
+            <img src={Wojtek2023} alt="Wojtek" />
           </Pic>
         </Section>
 
@@ -273,16 +281,16 @@ class About extends React.Component {
                 <sup className="footnotelink" id="fnhref:pronunciation">
                   <a href="#fn:pronunciation">1</a>
                 </sup>
-                , and I’m a software engineer. Originally&nbsp;based in Kraków, Poland, I've been{' '}
-                <a href="//nomadlist.com/@wojtek">traveling extensively</a> since 2010. Eventually—in 2015—I’ve sold
+                , and I'm a software engineer. Originally&nbsp;based in Kraków, Poland, I've been{' '}
+                <a href="//nomadlist.com/@wojtek">traveling extensively</a> since 2010. Eventually—in 2015—I've sold
                 some of my bigger possessions, left everything else behind and became a digital nomad.
               </p>
               <p className="intro">
                 My professional work is mostly related to front-end development which I got into
-                in&nbsp;the&nbsp;early&nbsp;2000’s.
+                in&nbsp;the&nbsp;early&nbsp;2000's.
               </p>
               <p>
-                Within Front-End, I specialise in Web Accessibility and I’ve given{' '}
+                Within Front-End, I specialise in Web Accessibility and I've given{' '}
                 <Link to="/speaking/">several workshops and presentations</Link> on the topic. In 2005, I've published
                 the first course of{' '}
                 <a href="https://en.wikipedia.org/wiki/Polish_Sign_Language">Polish Sign Language</a> available online.
@@ -295,7 +303,7 @@ class About extends React.Component {
                 leader. That includes fully distributed (remote-first) groups, physical offices with satellite workers,
                 multi-site groups spread between different continents, and traditional single-site teams. I've also
                 founded and been running a local office for 4 years scaling it up to 18 people. All of these experiences
-                gave me an unique perspective into the dynamics of every model behind remote work and into various kinds
+                gave me an great perspective into the dynamics of every model behind remote work and into various kinds
                 of communication patterns.
               </p>
 
@@ -307,7 +315,7 @@ class About extends React.Component {
               <aside className="footnotes">
                 <ol>
                   <li id="fn:pronunciation">
-                    1. My first name is pronounced “Voitek”. <a href="#fnhref:pronunciation">↩</a>
+                    1. My first name is pronounced "Voitek". <a href="#fnhref:pronunciation">↩</a>
                   </li>
                 </ol>
               </aside>
@@ -324,8 +332,7 @@ class About extends React.Component {
             <div>
               <h3>Recommended stack</h3>
               <p>
-                React, Redux, TypeScript, Styled Components, CSS&nbsp;Modules, Web Accessibility, Storybook, Jest,
-                Cypress
+                Next.js, React, Redux, TypeScript, Styled Components, CSS&nbsp;Modules, Web Accessibility, Storybook
               </p>
             </div>
           </TwoCol>

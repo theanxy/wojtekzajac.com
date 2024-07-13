@@ -9,10 +9,6 @@ const PAGE_LIST = [
     url: '/travels/',
   },
   {
-    text: 'Photography',
-    url: '/photography/',
-  },
-  {
     text: 'Speaking',
     url: '/speaking/',
     isPublished: true,
@@ -24,7 +20,13 @@ const PAGE_LIST = [
   {
     text: 'Resources',
     url: '/resources/',
+    // isPublished: true,
+  },
+  {
+    text: 'Photography',
+    url: 'http://wojtek.photo',
     isPublished: true,
+    isExternal: true
   },
 ];
 

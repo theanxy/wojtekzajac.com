@@ -48,9 +48,15 @@ export default () => (
   <Menu>
     {pages.map((page, id) => (
       <Li key={id} data-shaded={!page.isPublished}>
-        <Link to={page.url} activeStyle={{ fontWeight: 600 }}>
-          {page.text}
-        </Link>
+        {page.isExternal ? (
+          <a href={page.url} target="_blank" rel="noopener noreferrer">
+            {page.text} <span role="img" aria-label="external link">↗</span>
+          </a>
+        ) : (
+          <Link to={page.url} activeStyle={{ fontWeight: 600 }}>
+            {page.text}
+          </Link>
+        )}
       </Li>
     ))}
   </Menu>
