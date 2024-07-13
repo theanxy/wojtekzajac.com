@@ -330,7 +330,7 @@ class About extends React.Component {
               <p>
                 Throughout my career, I've collaborated with notable clients such as Twitter, Kaplan, Inc., and Riot
                 Games on various front-end development projects. I also coordinated the development of high-traffic
-                websites for American Idol and The X Factor USA.
+                websites for American Idol and The X-Factor USA.
               </p>
 
               <p>
