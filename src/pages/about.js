@@ -134,9 +134,9 @@ const Experience = styled.div`
       border-bottom: 1px solid #ccc;
       padding-bottom: 1px;
 
-      &:after {
-        content: ' →';
-      }
+      // &:after {
+      //   content: ' →';
+      // }
 
       &:hover {
         border-color: #000;
@@ -202,24 +202,46 @@ const technical = [
   //   date: 'Jul 2006 – now'
   // },
   {
-    company: 'Euler Labs',
+    company: (
+      <a href="https://eulerlabs.com" target="_blank" rel="noopener noreferrer">
+        Euler Labs
+      </a>
+    ),
     title: 'Tech Lead UI/UX',
     date: 'Feb 2022 - now',
   },
   {
-    company: 'Kaplan, Inc.',
+    company: (
+      <a href="https://kaplan.com" target="_blank" rel="noopener noreferrer">
+        Kaplan, Inc.
+      </a>
+    ),
     title: 'Lead Front-End Engineer',
     date: 'Jan 2015 – Mar 2021',
     xteam: true,
   },
   {
-    company: 'Fox Broadcasting Company',
+    company: (
+      <a href="https://fox.com" target="_blank" rel="noopener noreferrer">
+        Fox Broadcasting Company
+      </a>
+    ),
     title: 'Senior Front-end Engineer',
     date: 'Jul 2010 – Dec 2014',
     xteam: true,
   },
   {
-    company: 'Xfive.co / X-Team',
+    company: (
+      <span>
+        <a href="https://xfive.co" target="_blank" rel="noopener noreferrer">
+          Xfive.co
+        </a>{' '}
+        /{' '}
+        <a href="https://x-team.com" target="_blank" rel="noopener noreferrer">
+          X-Team
+        </a>
+      </span>
+    ),
     title: 'Senior Front-end Engineer',
     date: 'Jul 2006 – Jul 2010',
   },
@@ -232,13 +254,21 @@ const leadership = [
     date: 'Jun 2018 – Jan 2019',
   },
   {
-    company: 'Fox Broadcasting Company',
+    company: (
+      <a href="https://fox.com" target="_blank" rel="noopener noreferrer">
+        Fox Broadcasting Company
+      </a>
+    ),
     title: 'Team Lead',
     date: 'Sep 2013 - Dec 2014',
     xteam: true,
   },
   {
-    company: <a href="https://xfive.co">Xfive.co</a>,
+    company: (
+      <a href="https://xfive.co" rel="noopener noreferrer">
+        Xfive.co
+      </a>
+    ),
     title: 'Branch Manager',
     date: 'Nov 2010 – Dec 2014',
   },
@@ -277,39 +307,41 @@ class About extends React.Component {
           <Container>
             <Bio>
               <p className="intro">
-                My name is Wojtek Zając
+                I’m Wojtek Zając
                 <sup className="footnotelink" id="fnhref:pronunciation">
                   <a href="#fn:pronunciation">1</a>
                 </sup>
-                , and I'm a software engineer. Originally&nbsp;based in Kraków, Poland, I've been{' '}
-                <a href="//nomadlist.com/@wojtek">traveling extensively</a> since 2010. Eventually—in 2015—I've sold
-                some of my bigger possessions, left everything else behind and became a digital nomad.
+                , a software engineer originally from Kraków, Poland. Since 2010, I've been traveling
+                extensively—transitioning to a fully nomadic lifestyle in 2014. Over the past years, I've lived in six
+                different countries, embracing the concept of personal sovereignty through location independence.
               </p>
               <p className="intro">
-                My professional work is mostly related to front-end development which I got into
-                in&nbsp;the&nbsp;early&nbsp;2000's.
+                My professional work is mostly related to front-end development, which I got into in the early 2000s.
               </p>
               <p>
-                Within Front-End, I specialise in Web Accessibility and I've given{' '}
-                <Link to="/speaking/">several workshops and presentations</Link> on the topic. In 2005, I've published
-                the first course of{' '}
-                <a href="https://en.wikipedia.org/wiki/Polish_Sign_Language">Polish Sign Language</a> available online.
-                Since then, I've been working with major Universities in U.S., UK and Australia, govermental insitutions
-                and private companies on making sure their websites comply with accessibility regulations.
-              </p>
-
-              <p>
-                Over time, I became accustomed to working in teams of different sizes and shapes, both as a member and
-                leader. That includes fully distributed (remote-first) groups, physical offices with satellite workers,
-                multi-site groups spread between different continents, and traditional single-site teams. I've also
-                founded and been running a local office for 4 years scaling it up to 18 people. All of these experiences
-                gave me an great perspective into the dynamics of every model behind remote work and into various kinds
-                of communication patterns.
+                Within Front-End, I specialize in Web Accessibility, and I've given{' '}
+                <Link to="/speaking/">several workshops and presentations</Link> on the topic. In 2005, published the
+                first online course of{' '}
+                <a href="https://en.wikipedia.org/wiki/Polish_Sign_Language">Polish Sign Language</a>. I've worked with
+                major universities in the U.S., UK, and Australia, as well as governmental institutions, ensuring their
+                websites comply with accessibility regulations.
               </p>
 
               <p>
-                Currently, my interests revolve around technical leadership and best ways to foster company culture that
-                leverages remote working and asynchronous communication.
+                Throughout my career, I've collaborated with notable clients such as Twitter, Kaplan, Inc., and Riot
+                Games on various front-end development projects. I also coordinated the development of high-traffic
+                websites for American Idol and The X Factor USA.
+              </p>
+
+              <p>
+                I've gained experience in diverse team structures, from fully distributed groups to traditional
+                single-site teams. For four years, I established and led a local branch of an international software
+                house, growing it to 18 team members.
+              </p>
+
+              <p>
+                Currently, my interests revolve around technical leadership and fostering company culture that leverages
+                remote working and asynchronous communication.
               </p>
 
               <aside className="footnotes">
@@ -331,9 +363,7 @@ class About extends React.Component {
             </div>
             <div>
               <h3>Recommended stack</h3>
-              <p>
-                Next.js, React, Redux, TypeScript, Styled Components, CSS&nbsp;Modules, Web Accessibility, Storybook
-              </p>
+              <p>Next.js, Redux, TypeScript, Styled Components, CSS&nbsp;Modules, Web Accessibility, Storybook</p>
             </div>
           </TwoCol>
         </Section>
@@ -345,9 +375,7 @@ class About extends React.Component {
             {listExperience('Leadership', leadership)}
           </TwoCol>
 
-          <p>
-            * Through <a href="https://x-team.com">X-Team</a>
-          </p>
+          <p>* Through X-Team</p>
           <p>
             For a more detailed work history, please see{' '}
             <a href="https://www.linkedin.com/in/wojciechzajac/">Linkedin</a>.
@@ -359,11 +387,16 @@ class About extends React.Component {
           <Interviews>
             <ul>
               <li>
+                <a href="https://x-team.com/blog/interview-wojtek-zajac" lang="en">
+                  [EN] On what it means to be an existential migrant
+                </a>
+              </li>
+              <li>
                 <a
                   href="https://blog.whoishiring.io/wojtek-zajac-on-his-early-career-remote-work-and-accessibility/"
                   lang="en"
                 >
-                  [EN] Wojtek Zając on his early career, remote work and accessibility
+                  [EN] On early career, remote work and accessibility
                 </a>
               </li>
               <li>
