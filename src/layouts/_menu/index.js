@@ -50,7 +50,7 @@ export default () => (
           <a href={page.url} target="_blank" rel="noopener noreferrer">
             {page.text}{' '}
             <span role="img" aria-label="external link">
-              &rarr;
+              &#x2197;
             </span>
           </a>
         ) : (
