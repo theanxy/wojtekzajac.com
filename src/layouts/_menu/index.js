@@ -40,9 +40,7 @@ const Li = styled.li`
   }
 `;
 
-const pages = process.env.SHOW_FULL_MENU
-  ? PAGE_LIST
-  : PAGE_LIST.filter(page => page.isPublished);
+const pages = process.env.SHOW_FULL_MENU ? PAGE_LIST : PAGE_LIST.filter((page) => page.isPublished);
 
 export default () => (
   <Menu>
@@ -50,7 +48,10 @@ export default () => (
       <Li key={id} data-shaded={!page.isPublished}>
         {page.isExternal ? (
           <a href={page.url} target="_blank" rel="noopener noreferrer">
-            {page.text} <span role="img" aria-label="external link">↗</span>
+            {page.text}{' '}
+            <span role="img" aria-label="external link">
+              &rarr
+            </span>
           </a>
         ) : (
           <Link to={page.url} activeStyle={{ fontWeight: 600 }}>

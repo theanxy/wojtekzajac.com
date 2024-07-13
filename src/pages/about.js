@@ -387,13 +387,20 @@ class About extends React.Component {
           <Interviews>
             <ul>
               <li>
-                <a href="https://x-team.com/blog/interview-wojtek-zajac" lang="en">
+                <a
+                  href="https://x-team.com/blog/interview-wojtek-zajac"
+                  lang="en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   [EN] On what it means to be an existential migrant
                 </a>
               </li>
               <li>
                 <a
                   href="https://blog.whoishiring.io/wojtek-zajac-on-his-early-career-remote-work-and-accessibility/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   lang="en"
                 >
                   [EN] On early career, remote work and accessibility
@@ -402,6 +409,8 @@ class About extends React.Component {
               <li>
                 <a
                   href="https://geek.justjoin.it/wieku-16-stworzyl-front-end-twittera-dzis-pracuje-klientami-calego-swiata/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   lang="pl"
                 >
                   [PL] W wieku 16 lat stworzył front-end Twittera. Dziś pracuje z klientami z całego świata
