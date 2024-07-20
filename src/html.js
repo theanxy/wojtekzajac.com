@@ -29,6 +29,12 @@ module.exports = class HTML extends React.Component {
           {this.props.preBodyComponents}
           <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
+
+          <!-- 100% privacy-first analytics -->
+          <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+          <noscript>
+            <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+          </noscript>
         </body>
       </html>
     );
