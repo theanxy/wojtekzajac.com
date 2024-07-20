@@ -7,9 +7,7 @@
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-catch-links": "^1.0.9",
-    "gatsby-plugin-google-analytics": "^1.0.31",
-    "gatsby-plugin-mailchimp":
-      "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v1",
+    "gatsby-plugin-mailchimp": "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v1",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
@@ -22,10 +20,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "clean": "rm -rf public",
-    "deploy":
-      "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

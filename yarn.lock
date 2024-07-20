@@ -3852,13 +3852,6 @@ gatsby-plugin-catch-links@^1.0.9:
     babel-runtime "^6.26.0"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-google-analytics@^1.0.31:
-  version "1.0.31"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.31.tgz#eaf16e1809461b10badf12c05038c429745783c0"
-  integrity sha512-Gg7I5o6jnpHxESGqJPgt15Tvfo9EAbA5B3LpiZcasUU6iHdqIiBV8Yx7iX+hi1jubToEcEQAEfcSK8ZqV8nRBQ==
-  dependencies:
-    babel-runtime "^6.26.0"
-
 "gatsby-plugin-mailchimp@https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#gatsby-v1":
   version "3.0.0"
   resolved "https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#cbf21d24c8940a3d244d0d74d607163963cc9432"
