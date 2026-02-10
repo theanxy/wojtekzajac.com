@@ -208,7 +208,7 @@ const technical = [
       </a>
     ),
     title: 'Tech Lead UI/UX',
-    date: 'Feb 2022 - now',
+    date: 'Feb 2022 - Feb 2026',
   },
   {
     company: (
